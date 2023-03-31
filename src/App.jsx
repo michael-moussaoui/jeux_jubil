@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Jeuxjubil from "./pages/Jeuxjubil";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
@@ -18,8 +19,9 @@ function App() {
 				{/* <Navbar /> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/A_propos" element={<About />} />
-					<Route path="/Nos_services" element={<Services />} />
+					<Route path="/jeux_jubil" element={<Jeuxjubil />} />
+					<Route path="/a_propos" element={<About />} />
+					<Route path="/nos_services" element={<Services />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</Router>

@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .bodyContact {
+	background: rgb(107 33 168);
+} */
+
+.trail {
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	border-radius: 15px;
+	background: rgb(216 180 254);
+	transform: translate(-80%, -80%);
+}
+
+@media screen and (max-width: 769px) {
+	.trail {
+		display: none;
+	}
+}

@@ -1,23 +1,24 @@
 import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full bg-[transparent] shadow shadow-purple-800">
+		<nav className="w-full bg-purple-300 shadow shadow-purple-800 z-[5000]">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-				<div>
+				<div className="">
 					<div className="flex items-center justify-between py-3 md:py-5 md:block">
-						<a href="javascript:void(0)">
+						<Link to="/jeux_jubil">
 							<img
 								className=" h-20"
 								src="logoJeux.png"
 								alt="logo de la société"
 							/>
-						</a>
-						<div className="md:hidden">
+						</Link>
+						<div className="md:hidden z-5000">
 							<button
-								className="p-2 text-purple-800 rounded-md outline-none focus:border-purple-800 focus:border"
+								className="p-2 text-purple-800 rounded-md outline-none focus:border-purple-800 focus:border z-[5000] "
 								onClick={() => setNavbar(!navbar)}
 							>
 								{navbar ? (
@@ -56,21 +57,21 @@ export default function NavBar() {
 				<div>
 					<div
 						className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-							navbar ? "block" : "hidden"
+							navbar ? "block " : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-							<li className="text-gray-600  hover:text-purple-800">
-								<a href="javascript:void(0)">Jeux jubil</a>
+						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800  z-[5000]">
+								<Link to="/jeux_jubil">Jeux jubil</Link>
 							</li>
-							<li className="text-gray-600 hover:text-purple-800 ">
-								<a href="javascript:void(0)">A propos</a>
+							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+								<Link to="/a_propos">A propos</Link>
 							</li>
-							<li className="text-gray-600 hover:text-purple-800 ">
-								<a href="javascript:void(0)">Nos services</a>
+							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+								<Link to="/nos_services">Nos services</Link>
 							</li>
-							<li className="text-gray-600 hover:text-purple-800 ">
-								<a href="javascript:void(0)">Nous contacter</a>
+							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+								<Link to="/contact">Nous contacter</Link>
 							</li>
 						</ul>
 					</div>
