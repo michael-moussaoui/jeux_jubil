@@ -62,7 +62,7 @@ export default function NavBar() {
 					>
 						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
 							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800  z-[5000]">
-								<Link to="/jeux_jubil">Jeux jubil</Link>
+								<Link to="/jeux_jubil">Jeux Vadrouille</Link>
 							</li>
 							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/a_propos">A propos</Link>

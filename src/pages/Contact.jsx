@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import styles from "../styles/contact.css?inline";
 import "./contact.modules.css";
@@ -50,6 +51,7 @@ function Contact() {
 					<button className=" font-Carter">Envoyer</button>
 				</form>
 			</div>
+			<Footer />
 		</div>
 	);
 }

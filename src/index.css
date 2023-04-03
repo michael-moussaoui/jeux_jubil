@@ -5,6 +5,34 @@
 /* .bodyContact {
 	background: rgb(107 33 168);
 } */
+body {
+	overflow-x: hidden;
+}
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #d8b4fe;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #d8b4fe;
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(107, 33, 168, 0.6);
+	border-radius: 14px;
+}
+@media screen and (max-width: 768px) {
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+}
 
 .trail {
 	position: absolute;
