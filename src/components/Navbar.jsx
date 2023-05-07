@@ -8,10 +8,10 @@ export default function NavBar() {
 		<nav className="w-full bg-purple-300 shadow shadow-purple-800 z-[5000]">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div className="">
-					<div className="flex items-center justify-between py-3 md:py-5 md:block">
-						<Link to="/jeux_jubil">
+					<div className="flex items-center justify-between py-2 md:py-3 md:block">
+						<Link to="/jeux_vadrouille">
 							<img
-								className=" h-20"
+								className=" h-[6rem] border-2 border-purple-800 rounded-sm "
 								src="logoJeux.png"
 								alt="logo de la société"
 							/>
@@ -62,7 +62,7 @@ export default function NavBar() {
 					>
 						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
 							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800  z-[5000]">
-								<Link to="/jeux_jubil">Jeux Vadrouille</Link>
+								<Link to="/jeux_vadrouille">Jeux Vadrouille</Link>
 							</li>
 							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/a_propos">A propos</Link>

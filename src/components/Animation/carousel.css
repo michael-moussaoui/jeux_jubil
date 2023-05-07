@@ -97,6 +97,10 @@
 .number-slide1 {
 	border: none;
 }
+.number-slide1 img {
+	border: 2px solid rgb(107 33 168);
+	border-radius: 15px;
+}
 /*img {
 	width: 100%;
 	height: 100%;

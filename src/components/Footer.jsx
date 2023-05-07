@@ -24,7 +24,7 @@ function Footer() {
 			<div className="absolute bottom-0 pb-5 left-1/2 -translate-x-1/2">
 				<p>
 					{" "}
-					Copyright &copy; {new Date().getFullYear()} Jeux Jubil{" "}
+					Copyright &copy; {new Date().getFullYear()} Jeux Vadrouille{" "}
 				</p>
 				<p className="text-xs text-purple-600">
 					Crée par MOUSSAOUI Michaël

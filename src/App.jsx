@@ -7,7 +7,7 @@ import {
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Jeuxjubil from "./pages/Jeuxjubil";
+import Jeuxvadrouille from "./pages/Jeuxvadrouille";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
@@ -19,7 +19,10 @@ function App() {
 				{/* <Navbar /> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/jeux_jubil" element={<Jeuxjubil />} />
+					<Route
+						path="/jeux_vadrouille"
+						element={<Jeuxvadrouille />}
+					/>
 					<Route path="/a_propos" element={<About />} />
 					<Route path="/nos_services" element={<Services />} />
 					<Route path="/contact" element={<Contact />} />

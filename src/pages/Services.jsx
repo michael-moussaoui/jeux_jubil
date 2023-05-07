@@ -1,13 +1,22 @@
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import CoverflowSlide from "../components/Animation/coverflowSlide";
 
 function Services() {
 	return (
-		<div className="text-lg">
+		<motion.div
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+			transition={{ duration: 1.5 }}
+			className="relative text-lg"
+		>
 			<Navbar />
 			<h1 className=" w-64  text-center text-2xl md:text-4xl mx-auto mt-10 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
 				Nos services
 			</h1>
+			<CoverflowSlide />
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div className="num_1 border-2 border-purple-800 mb-10 py-14  pl-14 w-[50vw] relative left-10 ">
 					<h2 className=" font-Carter font-bold">
@@ -85,7 +94,7 @@ function Services() {
 				</div>
 			</div>
 			<Footer />
-		</div>
+		</motion.div>
 	);
 }
 

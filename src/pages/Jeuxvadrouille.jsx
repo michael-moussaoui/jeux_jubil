@@ -1,81 +1,90 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import Dots from "../components/Animation/dots";
 import Carousel from "../components/Animation/Carousel";
 import "./jeux.modules.css";
 import Footer from "../components/Footer";
 
-function Jeuxjubil() {
-	// dots is an array of Dot objects,
-	// mouse is an object used to track the X and Y position
-	// of the mouse, set with a mousemove event listener below
-	var dots = [],
-		mouse = {
-			x: 0,
-			y: 0,
-		};
+function Jeuxvadrouille() {
+	// // dots is an array of Dot objects,
+	// // mouse is an object used to track the X and Y position
+	// // of the mouse, set with a mousemove event listener below
+	// var dots = [],
+	// 	mouse = {
+	// 		x: 0,
+	// 		y: 0,
+	// 	};
 
-	// The Dot object used to scaffold the dots
-	var Dot = function () {
-		this.x = 0;
-		this.y = 0;
-		this.node = (function () {
-			var n = document.createElement("div");
-			n.className = "trail";
-			document.body.appendChild(n);
-			return n;
-		})();
-	};
-	// The Dot.prototype.draw() method sets the position of
-	// the object's <div> node
-	Dot.prototype.draw = function () {
-		this.node.style.left = this.x + "px";
-		this.node.style.top = this.y + "px";
-		this.node.style.backgroundColor = this.pink;
-	};
+	// // The Dot object used to scaffold the dots
+	// var Dot = function () {
+	// 	this.x = 0;
+	// 	this.y = 0;
+	// 	this.node = (function () {
+	// 		var n = document.createElement("div");
+	// 		n.className = "trail";
+	// 		document.body.appendChild(n);
+	// 		return n;
+	// 	})();
+	// };
+	// // The Dot.prototype.draw() method sets the position of
+	// // the object's <div> node
+	// Dot.prototype.draw = function () {
+	// 	this.node.style.left = this.x + "px";
+	// 	this.node.style.top = this.y + "px";
+	// 	this.node.style.backgroundColor = this.pink;
+	// };
 
-	// Creates the Dot objects, populates the dots array
-	for (var i = 0; i < 10; i++) {
-		var d = new Dot();
-		dots.push(d);
-	}
+	// // Creates the Dot objects, populates the dots array
+	// for (var i = 0; i < 10; i++) {
+	// 	var d = new Dot();
+	// 	dots.push(d);
+	// }
 
-	// This is the screen redraw function
-	function draw() {
-		// Make sure the mouse position is set everytime
-		// draw() is called.
-		var x = mouse.x,
-			y = mouse.y;
+	// // This is the screen redraw function
+	// function draw() {
+	// 	// Make sure the mouse position is set everytime
+	// 	// draw() is called.
+	// 	var x = mouse.x,
+	// 		y = mouse.y;
 
-		// This loop is where all the 90s magic happens
-		dots.forEach(function (dot, index, dots) {
-			var nextDot = dots[index + 1] || dots[0];
+	// 	// This loop is where all the 90s magic happens
+	// 	dots.forEach(function (dot, index, dots) {
+	// 		var nextDot = dots[index + 1] || dots[0];
 
-			dot.x = x;
-			dot.y = y;
-			dot.draw();
-			x += (nextDot.x - dot.x) * 0.8;
-			y += (nextDot.y - dot.y) * 0.8;
-		});
-	}
+	// 		dot.x = x;
+	// 		dot.y = y;
+	// 		dot.draw();
+	// 		x += (nextDot.x - dot.x) * 0.8;
+	// 		y += (nextDot.y - dot.y) * 0.8;
+	// 	});
+	// }
 
-	addEventListener("mousemove", function (event) {
-		//event.preventDefault();
-		mouse.x = event.pageX;
-		mouse.y = event.pageY;
-	});
+	// addEventListener("mousemove", function (event) {
+	// 	//event.preventDefault();
+	// 	mouse.x = event.pageX;
+	// 	mouse.y = event.pageY;
+	// });
 
-	// animate() calls draw() then recursively calls itself
-	// everytime the screen repaints via requestAnimationFrame().
-	function animate() {
-		draw();
-		requestAnimationFrame(animate);
-	}
+	// // animate() calls draw() then recursively calls itself
+	// // everytime the screen repaints via requestAnimationFrame().
+	// function animate() {
+	// 	draw();
+	// 	requestAnimationFrame(animate);
+	// }
 
-	// And get it started by calling animate().
-	animate();
+	// // And get it started by calling animate().
+	// animate();
 
 	return (
-		<div className="text-lg overflow-x-hidden">
+		<motion.div
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+			transition={{ duration: 1.5 }}
+			className="text-lg overflow-x-hidden"
+		>
+			<Dots />
 			<Navbar />
 			<h1 className="w-80  text-center text-2xl md:text-4xl mx-auto mt-10 mb-20 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 z-[5000] ">
 				Jeux Vadrouille
@@ -149,8 +158,8 @@ function Jeuxjubil() {
 				</div>
 			</div>
 			<Footer />
-		</div>
+		</motion.div>
 	);
 }
 
-export default Jeuxjubil;
+export default Jeuxvadrouille;

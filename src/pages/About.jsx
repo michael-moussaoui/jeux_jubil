@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./about.modules.css";
 
 function About() {
 	return (
-		<div className="text-lg text-center">
+		<motion.div
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+			transition={{ duration: 1.5 }}
+			className="text-lg text-center"
+		>
 			<Navbar />
 			<h1 className=" w-96   text-2xl md:text-4xl mx-auto mt-10 mb-24 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
 				Qui sommes-nous ?
@@ -63,7 +70,7 @@ function About() {
 				nouveaux jeux. À très vite sur un plateau !
 			</p>
 			<Footer />
-		</div>
+		</motion.div>
 	);
 }
 

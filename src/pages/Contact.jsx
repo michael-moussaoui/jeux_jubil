@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import styles from "../styles/contact.css?inline";
@@ -6,7 +7,13 @@ import "./contact.modules.css";
 function Contact() {
 	return (
 		// <div className={Styles.bodyContact}>
-		<div className=" min-h-screen text-lg bg-[#212121]">
+		<motion.div
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+			transition={{ duration: 1.5 }}
+			className=" min-h-screen text-lg bg-[#212121]"
+		>
 			<Navbar />
 
 			<div className="container_form mt-10 mb-5">
@@ -52,7 +59,7 @@ function Contact() {
 				</form>
 			</div>
 			<Footer />
-		</div>
+		</motion.div>
 	);
 }
 

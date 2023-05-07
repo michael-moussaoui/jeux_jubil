@@ -2,11 +2,22 @@
 module.exports = {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
+		// screens: {},
 		fontFamily: {
 			Taviraj: ["taviraj"],
 			Carter: ["Carter One"],
 		},
-		extend: {},
+		// colors: {
+		// 	mainColor: "#",
+		// 	secondaryColor: "",
+		// 	bgFooter: "",
+		// },
+
+		extend: {
+			boxShadow: {},
+			keyframes: {},
+			animation: {},
+		},
 	},
 	plugins: [],
 };
