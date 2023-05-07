@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
-import Dots from "../components/Animation/dots";
+import Dots from "../components/Animation/Dots";
 import Carousel from "../components/Animation/Carousel";
 import "./jeux.modules.css";
 import Footer from "../components/Footer";
