@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import CoverflowSlide from "../components/Animation/coverflowSlide";
+import CoverflowSlide from "../components/Animation/CoverflowSlide";
 
 function Services() {
 	return (
