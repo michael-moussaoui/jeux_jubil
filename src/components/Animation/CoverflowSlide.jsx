@@ -14,15 +14,15 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 
 const games = [
-	{ img: "../../../public/img/coverflow/arkopolis.jpg" },
-	{ img: "../../../public/img/coverflow/codegames.jpg" },
-	{ img: "../../../public/img/coverflow/hula-hoo.jpg" },
-	{ img: "../../../public/img/coverflow/papayoo.jpg" },
-	{ img: "../../../public/img/coverflow/pictit.jpg" },
-	{ img: "../../../public/img/coverflow/skyjo.jpg" },
-	{ img: "../../../public/img/coverflow/timebomb.jpg" },
-	{ img: "../../../public/img/coverflow/globalName.jpg" },
-	{ img: "../../../public/img/coverflow/global1.jpg" },
+	{ img: "/img/coverflow/arkopolis.jpg" },
+	{ img: "/img/coverflow/codegames.jpg" },
+	{ img: "/img/coverflow/hula-hoo.jpg" },
+	{ img: "/img/coverflow/papayoo.jpg" },
+	{ img: "/img/coverflow/pictit.jpg" },
+	{ img: "/img/coverflow/skyjo.jpg" },
+	{ img: "/img/coverflow/timebomb.jpg" },
+	{ img: "/img/coverflow/globalName.jpg" },
+	{ img: "/img/coverflow/global1.jpg" },
 ];
 
 function CoverflowSlide() {
