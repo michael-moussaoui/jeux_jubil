@@ -5,7 +5,7 @@ export default function NavBar() {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full bg-purple-300 shadow shadow-purple-800 z-[5000]">
+		<nav className="w-full bg-mainColor shadow shadow-colorBlue z-[5000]">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div className="">
 					<div className="flex items-center justify-between py-2 md:py-3 md:block">
@@ -18,7 +18,7 @@ export default function NavBar() {
 						</Link>
 						<div className="md:hidden z-5000">
 							<button
-								className="p-2 text-purple-800 rounded-md outline-none focus:border-purple-800 focus:border z-[5000] "
+								className="p-2 text-colorBlue rounded-md outline-none focus:border-purple-800 focus:border z-[5000] "
 								onClick={() => setNavbar(!navbar)}
 							>
 								{navbar ? (
@@ -60,17 +60,17 @@ export default function NavBar() {
 							navbar ? "block " : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800  z-[5000]">
+						<ul className="items-center justify-center text-darkBlue space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+							<li className="text-gray-600 font-Carter border-2 border-[transparent]  hover:text-purple-800  z-[5000]">
 								<Link to="/jeux_vadrouille">Jeux Vadrouille</Link>
 							</li>
-							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="text-gray-600 font-Carter border-2 border-[transparent]  hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/a_propos">A propos</Link>
 							</li>
-							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="text-gray-600 font-Carter border-2 border-[transparent] hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/nos_services">Nos services</Link>
 							</li>
-							<li className="text-gray-600 font-Carter border-2 border-transparent  hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="text-gray-600 font-Carter border-2 border-[transparent]  hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/contact">Nous contacter</Link>
 							</li>
 						</ul>

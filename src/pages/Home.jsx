@@ -55,13 +55,13 @@ export default function App() {
 					/>
 				))}
 			</div>
-			<p className="absolute w-[90vw] md:w-full text-center top-1/4   z-50 cursor-pointer font-Carter font-bold text-3xl md:text-5xl text-purple-500">
+			<p className="absolute w-[90vw] md:w-full text-center top-1/4   z-50 cursor-pointer font-Carter font-bold text-3xl md:text-5xl text-mainColor">
 				Bienvenue sur Jeux Vadrouille
 			</p>
 			<Link to="/jeux_vadrouille">
-				<div className="absolute w-28 h-16  rounded-full left-1/2 top-[40%]  -translate-x-1/2 z-50 cursor-pointer text-xl text-purple-300 bg-purple-700 transition-all hover:bg-purple-500 hover:text-purple-900 hover:shadow-lg hover:shadow-purple-800">
+				<div className="absolute w-28 h-16  rounded-full left-1/2 top-[40%]  -translate-x-1/2 z-50 cursor-pointer text-xl text-[#fff] font-bold bg-colorBlue transition-all hover:bg-colorBlue hover:text-darkBlue hover:shadow-md hover:shadow-mainColor">
 					<p className=" text-center relative top-1/2 -translate-y-1/2">
-						Start
+						Entrez
 					</p>
 				</div>
 			</Link>

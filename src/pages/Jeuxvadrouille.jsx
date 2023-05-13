@@ -78,11 +78,11 @@ function Jeuxvadrouille() {
 
 	return (
 		<motion.div
-			initial={{ scaleY: 0 }}
-			animate={{ scaleY: 1 }}
-			exit={{ scaleY: 0 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
 			transition={{ duration: 1.5 }}
-			className="text-lg overflow-x-hidden"
+			className="text-lg overflow-x-hidden "
 		>
 			<Dots />
 			<Navbar />
@@ -90,9 +90,16 @@ function Jeuxvadrouille() {
 				Jeux Vadrouille
 			</h1>
 			<Carousel />
+			<h2 className="w-1/2 mx-auto text-xl text-center">
+				Une ludothèque itinérante qui amène et anime des jeux pour
+				toutes &amp; tous en tout lieu &amp; toute occasion !
+			</h2>
+			<div>
+				<p></p>
+			</div>
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div className="num_1 border-2 border-purple-800 mb-10 py-14  pl-14 w-[50vw] relative left-10 ">
-					<h2 className=" font-Carter font-bold">Pour qui?</h2>
+					<h3 className=" font-Carter font-bold">Pour qui?</h3>
 					<p>
 						Pour des institutions : les mairies, les écoles, les
 						maisons de retraite, les accueils de loisirs, à ceux qui
@@ -108,19 +115,19 @@ function Jeuxvadrouille() {
 					</p>
 				</div>
 				<div>
-					<div className="w-[200px] h-[200px]">
+					{/* <div className="w-[200px] h-[200px]">
 						<img src="./img/nicubunu/nicubunu_Game_baddie_Billy.svg"></img>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div>
-					<div className="w-[200px] h-[200px]">
+					{/* <div className="w-[200px] h-[200px]">
 						<img src="./img/nicubunu/nicubunu_Game_baddie_Billy.svg"></img>
-					</div>
+					</div> */}
 				</div>
 				<div className="num_2 border-2 border-purple-800 my-10 p-10 w-[40vw] relative left-[35%]">
-					<h2 className=" font-Carter font-bold">Ou?</h2>
+					<h3 className=" font-Carter font-bold">Ou?</h3>
 					<p>
 						Partout. Jeux Vadrouille est une ludothèque ambulante afin
 						de pouvoir intervenir dans votre salon, votre jardin, dans
@@ -137,7 +144,7 @@ function Jeuxvadrouille() {
 			</div>
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div className="num_3 border-2 border-purple-800 my-10 p-10 w-[40vw] relative left-10">
-					<h2 className=" font-Carter font-bold">Quels jeux?</h2>
+					<h3 className=" font-Carter font-bold">Quels jeux?</h3>
 					<p>
 						Nous valorisons de préférence des jeux originaux et de
 						qualité (thème, matériel, concept…). Le principal critère
@@ -152,11 +159,13 @@ function Jeuxvadrouille() {
 					</p>
 				</div>
 				<div>
-					<div className="w-[200px] h-[200px]">
+					{/* <div className="w-[200px] h-[200px]">
 						<img src="./img/nicubunu/nicubunu_Game_baddie_Billy.svg"></img>
-					</div>
+					</div> */}
 				</div>
 			</div>
+			<img src="/img/Background.svg" />
+
 			<Footer />
 		</motion.div>
 	);

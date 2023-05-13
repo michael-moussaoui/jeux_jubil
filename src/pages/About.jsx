@@ -6,9 +6,9 @@ import "./about.modules.css";
 function About() {
 	return (
 		<motion.div
-			initial={{ scaleY: 0 }}
-			animate={{ scaleY: 1 }}
-			exit={{ scaleY: 0 }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
 			transition={{ duration: 1.5 }}
 			className="text-lg text-center"
 		>
@@ -16,7 +16,28 @@ function About() {
 			<h1 className=" w-96   text-2xl md:text-4xl mx-auto mt-10 mb-24 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
 				Qui sommes-nous ?
 			</h1>
-			<div className="flex h-[350px]  mx-auto  justify-center ">
+			<p>
+				<span className="">“Jeux Vadrouille”</span> est une petite
+				société qui organise des événements ludiques pour vous faire
+				découvrir et redécouvrir le plaisir du jeu. Pour cela, nous
+				organisons différentes manifestations et intervenons sur de
+				nombreuses communes aux alentours de Grenoble,tout au long de
+				l’année.
+			</p>
+			<p>
+				Le jeu, c’est du fun, des sourires et des rires. Mais c’est
+				aussi des rencontres, des échanges et des moments partagés.
+				<span className="">“Jeux Vadrouille”</span> s’inscrit
+				complètement dans cette démarche d’utiliser le jeu comme un
+				outil de cohésion sociale, où la dimension humaine est aussi
+				importante que le jeu en lui-même.
+			</p>
+			<p>
+				<span className="">“Jeux Vadrouille”</span> souhaite rendre
+				partout le jeu accessible à tous et favoriser la mixité
+				sociale.
+			</p>
+			<div className="flex h-[350px]  mx-auto mt-10  justify-center ">
 				<div className="vanessa h-full w-[30%]  mb-5 mx-10 pt-5 px-2 bg-[#212121] text-purple-400  rounded-lg">
 					<span className=" text-purple-700 text-xl font-Carter font-bold">
 						Vanessa,

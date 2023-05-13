@@ -11,7 +11,7 @@ body {
 /* Firefox */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: #d8b4fe;
+	scrollbar-color: #0c86f8;
 }
 
 /* Chrome, Edge, and Safari */
@@ -20,13 +20,18 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-	background: #d8b4fe;
+	background: #0c86f8;
+	background: #0cc0df;
 	border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: rgba(107, 33, 168, 0.6);
+	background-color: rgba(12, 132, 248, 0.6);
 	border-radius: 14px;
+}
+
+html {
+	--mainColor: #0cc0df;
 }
 @media screen and (max-width: 768px) {
 	::-webkit-scrollbar {
@@ -39,7 +44,7 @@ body {
 	height: 12px;
 	width: 12px;
 	border-radius: 15px;
-	background: rgb(216 180 254);
+	background-color: var(--mainColor);
 	transform: translate(-80%, -80%);
 }
 

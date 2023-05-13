@@ -7,13 +7,19 @@ module.exports = {
 			Taviraj: ["taviraj"],
 			Carter: ["Carter One"],
 		},
-		// colors: {
-		// 	mainColor: "#",
-		// 	secondaryColor: "",
-		// 	bgFooter: "",
-		// },
+		colors: {
+			mainColor: "#0CC0DF",
+			colorBlue: "#0C86F8",
+			darkBlue: "#0D04A3",
+			colorRed: "#F41710",
+			bgFooter: "",
+			bgNav: "",
+		},
 
 		extend: {
+			backgroundImage: {
+				mainBg: "url(/img/Background.svg)",
+			},
 			boxShadow: {},
 			keyframes: {},
 			animation: {},
