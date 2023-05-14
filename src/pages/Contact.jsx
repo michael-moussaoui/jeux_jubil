@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Dots from "../components/Animation/Dots";
 // import styles from "../styles/contact.css?inline";
 import "./contact.modules.css";
 
@@ -14,6 +15,7 @@ function Contact() {
 			transition={{ duration: 1.5 }}
 			className=" min-h-screen text-lg bg-[#212121]"
 		>
+			<Dots />
 			<Navbar />
 
 			<div className="container_form mt-10 mb-5">
@@ -21,7 +23,7 @@ function Contact() {
 					Nous contacter
 				</h1> */}
 				<form className="form">
-					<span className="title font-Carter text-purple-500">
+					<span className="title font-Carter text-mainColor">
 						Nous contacter
 					</span>
 					<div className="form_control">

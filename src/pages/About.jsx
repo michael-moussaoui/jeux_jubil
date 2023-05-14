@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Dots from "../components/Animation/Dots";
+import MyParticles from "../components/Animation/MyParticles";
 import "./about.modules.css";
 
 function About() {
@@ -12,10 +14,13 @@ function About() {
 			transition={{ duration: 1.5 }}
 			className="text-lg text-center"
 		>
+			<Dots />
 			<Navbar />
-			<h1 className=" w-96   text-2xl md:text-4xl mx-auto mt-10 mb-24 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
+			<MyParticles />
+			<h1 className=" w-96 text-center text-2xl md:text-4xl mx-auto mt-10 mb-20 p-5 rounded-3xl bg-mainColor text-darkBlue font-Carter  shadow-md shadow-mainColor z-[5000]  ">
 				Qui sommes-nous ?
 			</h1>
+
 			<p>
 				<span className="">“Jeux Vadrouille”</span> est une petite
 				société qui organise des événements ludiques pour vous faire
@@ -38,8 +43,8 @@ function About() {
 				sociale.
 			</p>
 			<div className="flex h-[350px]  mx-auto mt-10  justify-center ">
-				<div className="vanessa h-full w-[30%]  mb-5 mx-10 pt-5 px-2 bg-[#212121] text-purple-400  rounded-lg">
-					<span className=" text-purple-700 text-xl font-Carter font-bold">
+				<div className="vanessa h-full w-[30%]  mb-5 mx-10 pt-5 px-2 bg-colorRed text-white  rounded-lg">
+					<span className=" text-black text-xl font-Carter font-bold">
 						Vanessa,
 					</span>
 
@@ -58,7 +63,7 @@ function About() {
 					</p>
 				</div>
 
-				<div className="eva h-full w-[30%] mx-10 pt-5 px-2 bg-purple-400   rounded-lg">
+				<div className="eva h-full w-[30%] mx-10 pt-5 px-2 bg-colorBlue   rounded-lg">
 					<span className="text-purple-700 text-xl font-Carter font-bold">
 						Eva
 					</span>

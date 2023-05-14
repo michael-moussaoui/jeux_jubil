@@ -12,6 +12,8 @@ module.exports = {
 			colorBlue: "#0C86F8",
 			darkBlue: "#0D04A3",
 			colorRed: "#F41710",
+			black: "#000",
+			white: "#fff",
 			bgFooter: "",
 			bgNav: "",
 		},
@@ -19,6 +21,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				mainBg: "url(/img/Background.svg)",
+				redBg: "url(/img/Background_red.svg)",
 			},
 			boxShadow: {},
 			keyframes: {},

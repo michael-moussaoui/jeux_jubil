@@ -6,8 +6,8 @@ h2 {
 .num_1 {
 	background: linear-gradient(
 		180deg,
-		rgba(216, 180, 254, 1) 42%,
-		rgba(107, 33, 168, 1) 100%
+		rgba(12, 190, 223, 1) 42%,
+		rgba(71, 108, 231, 1) 100%
 	);
 	border-radius: 65px 10px 85px 25px;
 	margin-top: 5rem;
@@ -16,8 +16,8 @@ h2 {
 	//background: rgb(107, 33, 168);
 	background: linear-gradient(
 		180deg,
-		rgba(107, 33, 168, 1) 42%,
-		rgba(216, 180, 254, 1) 100%
+		rgba(71, 108, 231, 1) 42%,
+		rgba(12, 190, 223, 1) 100%
 	);
 	border-radius: 25px 85px 10px 65px;
 }
@@ -25,8 +25,8 @@ h2 {
 .num_3 {
 	background: linear-gradient(
 		180deg,
-		rgba(216, 180, 254, 1) 42%,
-		rgba(107, 33, 168, 1) 100%
+		rgba(12, 190, 223, 1) 42%,
+		rgba(71, 108, 231, 1) 100%
 	);
 	border-radius: 75px 15px 65px 20px;
 }

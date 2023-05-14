@@ -16,8 +16,8 @@
 	z-index: 5000;
 }
 .container_form:hover {
-	box-shadow: 2.5px 2.5px 5px #7e22ce,
-		-1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0.3px 0px 0px #7e22ce,
+	box-shadow: 2.5px 2.5px 5px #0cc0df,
+		-1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0.3px 0px 0px #0cc0df,
 		inset 0px -0px 0px #5f5e5e;
 }
 
@@ -46,10 +46,10 @@ form .form_control {
 form .form_control_textarea {
 	width: 100%;
 	position: relative;
-	font-size: 0.75rem;
+	font-size: 0.85rem;
 	padding: 0.5rem;
 	overflow: hidden;
-	color: #a855f7;
+	color: #b0b0b0;
 	background: #212121;
 	box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%),
 		inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
@@ -72,9 +72,9 @@ form .form_control .input {
 	background-color: #212121;
 	border: none;
 	outline: none;
-	color: #d8b4fe;
+	color: #b0b0b0;
 	padding: 0.5rem;
-	font-size: 0.75rem;
+	font-size: 0.85rem;
 	border-radius: 5px;
 	transition: box-shadow ease 0.2s;
 	box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%),
@@ -110,7 +110,7 @@ form button {
 	z-index: 5000;
 }
 form button:hover {
-	color: #7e22ce;
+	color: #0cc0df;
 	font-weight: bold;
 }
 
@@ -122,7 +122,7 @@ textarea:focus {
 	outline: none;
 }
 textarea::placeholder {
-	color: #a855f7;
+	color: #b0b0b0;
 }
 
 @media screen and (max-width: 768px) {

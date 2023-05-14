@@ -6,13 +6,13 @@ export default function NavBar({ backgroundImage }) {
 
 	return (
 		// <NavBar style={{ backgroundImage: "url(/img/Background.svg)" }}>
-		<nav className="w-full bg-mainBg  shadow shadow-mainColor z-[5000]">
+		<nav className="w-full bg-redBg  shadow shadow-colorRed z-[5000]">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div className="">
 					<div className="flex items-center justify-between py-2 md:py-3 md:block">
 						<Link to="/jeux_vadrouille">
 							<img
-								className=" h-[6rem] border-2 border-mainColor rounded-sm "
+								className=" h-[6rem] border-2 border-colorRed rounded-sm "
 								src="/public/img/Jeux_Vadrouille.png"
 								alt="logo de la société"
 							/>
@@ -62,16 +62,16 @@ export default function NavBar({ backgroundImage }) {
 						}`}
 					>
 						<ul className="items-center justify-center  space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-							<li className="bg-mainColor px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md  hover:text-purple-800  z-[5000]">
+							<li className="bg-colorRed px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md  hover:text-purple-800  z-[5000]">
 								<Link to="/jeux_vadrouille">Jeux Vadrouille</Link>
 							</li>
-							<li className="bg-mainColor px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md   hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="bg-colorRed px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md   hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/a_propos">A propos</Link>
 							</li>
-							<li className="bg-mainColor px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md  hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="bg-colorRed px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md  hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/nos_services">Nos services</Link>
 							</li>
-							<li className="bg-mainColor px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md   hover:text-purple-800 hover:border-b-2  z-[5000]">
+							<li className="bg-colorRed px-2 text-gray-600 font-Carter border-2 border-[transparent] rounded-md   hover:text-purple-800 hover:border-b-2  z-[5000]">
 								<Link to="/contact">Nous contacter</Link>
 							</li>
 						</ul>

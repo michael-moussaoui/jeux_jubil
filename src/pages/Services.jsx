@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Dots from "../components/Animation/Dots";
 import CoverflowSlide from "../components/Animation/CoverflowSlide";
 
 function Services() {
@@ -12,11 +13,12 @@ function Services() {
 			transition={{ duration: 1.5 }}
 			className="relative text-lg"
 		>
+			<Dots />
 			<Navbar />
-			<h1 className=" w-64  text-center text-2xl md:text-4xl mx-auto mt-10 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
+			<h1 className=" w-64 text-center text-2xl md:text-4xl mx-auto mt-10 mb-20 p-5 rounded-3xl bg-mainColor text-darkBlue font-Carter  shadow-md shadow-mainColor z-[5000]  ">
 				Nos services
 			</h1>
-			<CoverflowSlide />
+
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div className="num_1 border-2 border-purple-800 mb-10 py-14  pl-14 w-[50vw] relative left-10 ">
 					<h2 className=" font-Carter font-bold">
@@ -93,6 +95,7 @@ function Services() {
 					</p>
 				</div>
 			</div>
+			<CoverflowSlide />
 			<Footer />
 		</motion.div>
 	);
