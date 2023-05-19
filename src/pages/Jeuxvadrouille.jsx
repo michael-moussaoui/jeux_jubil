@@ -21,7 +21,7 @@ function Jeuxvadrouille() {
 				Jeux Vadrouille
 			</h1>
 			<img
-				src="/public/img/logoJeux.png"
+				src="img/logoJeux.png"
 				width={250}
 				height={150}
 				alt="logo du site"

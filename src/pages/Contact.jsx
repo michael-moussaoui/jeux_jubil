@@ -18,7 +18,7 @@ function Contact() {
 			<Dots />
 			<Navbar />
 
-			<div className="container_form mt-10 mb-5">
+			<div className="container_form relative mt-10 mb-5">
 				{/* <h1 className=" w-80  text-center text-2xl md:text-4xl mx-auto mt-10 p-5 rounded-3xl bg-purple-300 font-Carter text-purple-700 shadow-lg shadow-purple-800 ">
 					Nous contacter
 				</h1> */}
@@ -26,6 +26,22 @@ function Contact() {
 					<span className="title font-Carter text-mainColor">
 						Nous contacter
 					</span>
+					<div className="absolute right-2 bottom-10">
+						<img
+							src="img/dice.svg"
+							width={150}
+							height={50}
+							alt="dice"
+						></img>
+					</div>
+					<div className="absolute left-6 top-8">
+						<img
+							src="img/playing-cards-svgrepo-com.svg"
+							width={150}
+							height={50}
+							alt="dice"
+						></img>
+					</div>
 					<div className="form_control">
 						<input
 							required=""

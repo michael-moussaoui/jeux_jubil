@@ -13,7 +13,7 @@ export default function NavBar({ backgroundImage }) {
 						<Link to="/jeux_vadrouille">
 							<img
 								className=" h-[6rem] border-2 border-mainColor rounded-sm "
-								src="/public/img/Jeux_Vadrouille.png"
+								src="/img/Jeux_Vadrouille.png"
 								alt="logo de la société"
 							/>
 						</Link>
