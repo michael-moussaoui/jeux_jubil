@@ -53,16 +53,16 @@ function Jeuxvadrouille() {
 					</p>
 				</div>
 				<div>
-					{/* <div className="w-[200px] h-[200px]">
-						<img src="./img/nicubunu/nicubunu_Game_baddie_Billy.svg"></img>
-					</div> */}
+					<div className="relative w-[200px] h-[200px] z-[500]">
+						<img src="./img/van.svg"></img>
+					</div>
 				</div>
 			</div>
 			<div className=" border-2 border-purple-600 flex flex-row">
 				<div>
-					{/* <div className="w-[200px] h-[200px]">
-						<img src="./img/nicubunu/nicubunu_Game_baddie_Billy.svg"></img>
-					</div> */}
+					<div className="relative w-[200px] h-[200px] z-[500]">
+						<img src="./img/van.svg"></img>
+					</div>
 				</div>
 				<div className="num_2 border-2 border-purple-800 my-10 p-10 w-[40vw] relative left-[35%]">
 					<h3 className=" font-Carter font-bold">Ou?</h3>
